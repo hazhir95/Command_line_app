@@ -36,7 +36,8 @@ public class Main {
                 1) Reverse a string
                 2) Average Function
                 3) Bark
-                4) Beep (N/A)"""); // Three double quotation marks allows us to create a text block.
+                4) Beep
+                5) List Creator"""); // Three double quotation marks allows us to create a text block.
 
         int entry = read.nextInt(); double no1 = 0; double no2 = 0;
         switch (entry) {
@@ -47,10 +48,10 @@ public class Main {
             }
             case 3 -> dog.bark();
             case 4 -> {
-                System.out.println("Sorry this option is not ready yet!");
                 Toolkit.getDefaultToolkit().beep();
                 menu();
             }
+            case 5 -> arrlist();
         }
     }
 
@@ -86,8 +87,16 @@ public class Main {
         x = juliet.nextDouble();y = juliet.nextDouble();
 
         System.out.print("\nThe average of numbers are: ");
-        return (x*y)/2;
+        return (x+y)/2;
 
+    }
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    static void arrlist(){
+        /*create a do while loop to create a array list. Arrray length wll be assigned by user
+        make sure to use
+        Array.toString
+        Array.sort
+         */
     }
 }
 
