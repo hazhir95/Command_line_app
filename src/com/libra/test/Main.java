@@ -1,8 +1,10 @@
 package com.libra.test;
 
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Main {
 
@@ -92,11 +94,23 @@ public class Main {
     }
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     static void arrlist(){
-        /*create a do while loop to create a array list. Arrray length wll be assigned by user
-        make sure to use
-        Array.toString
-        Array.sort
-         */
+
+        Scanner juliet = new Scanner(System.in);
+        ArrayList<String> userArr = new ArrayList<>();
+        
+        String entry; //boolean end = false;
+
+        System.out.println("\nPlease enter your items:");
+        entry = juliet.nextLine();
+
+
+        while(entry != null) {
+            userArr.add(entry);
+        }
+
+
+        System.out.println("Your List:\n\n" + userArr);
+
     }
 }
 
