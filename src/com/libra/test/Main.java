@@ -98,19 +98,20 @@ public class Main {
         Scanner juliet = new Scanner(System.in);
         ArrayList<String> userArr = new ArrayList<>();
         
-        String entry; //boolean end = false;
+        String entry = null; //boolean end = false;
 
-        System.out.println("\nPlease enter your items:");
-        entry = juliet.nextLine();
+        System.out.println("\nPlease enter your item(s):");
 
 
-        while(entry != null) {
+
+        while (!Objects.equals(entry, "")) {
+            entry = juliet.nextLine();
             userArr.add(entry);
         }
 
+        System.out.println("\nYour List:\n" + userArr);
 
-        System.out.println("Your List:\n\n" + userArr);
-
+        menu();
     }
 }
 
