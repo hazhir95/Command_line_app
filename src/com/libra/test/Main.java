@@ -4,7 +4,16 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Scanner;
-import java.util.Arrays;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 
 public class Main {
 
@@ -40,6 +49,7 @@ public class Main {
                 3) Bark
                 4) Beep
                 5) List Creator"""); // Three double quotation marks allows us to create a text block.
+
 
         int entry = read.nextInt(); double no1 = 0; double no2 = 0;
         switch (entry) {
