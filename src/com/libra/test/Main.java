@@ -1,19 +1,12 @@
 package com.libra.test;
 
 import java.awt.*;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Objects;
 import java.util.Scanner;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.Scanner;
-
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.UnsupportedAudioFileException;
 
 public class Main {
 
@@ -64,6 +57,7 @@ public class Main {
                 menu();
             }
             case 5 -> arrlist();
+            case 0 -> test();
         }
     }
 
@@ -122,6 +116,22 @@ public class Main {
         System.out.println("\nYour List:\n" + userArr);
 
         menu();
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    }
+
+    static void test(){
+
+        //incomplete
+        String [][][] arrTest = new String [2][3][4];
+
+        arrTest [0][0][0]= "Hey 1";
+        arrTest [1][0][0]= "Hey 2";
+        arrTest [0][1][0]= "Hey 3";
+        arrTest [0][0][1]= "Hey 4";
+
+
+        System.out.println("test complete!");
+        System.out.println(Arrays.deepToString(arrTest));
     }
 }
 
